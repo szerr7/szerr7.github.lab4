@@ -23,8 +23,21 @@
                       
                       
                                 <div class="pass">
-                                          <label class="passw">Password </label> <br>  
-                                          <input type="password" placeholder="Enter Password" name="password" required>  
+                                          <label class="passw">Password</label> <br>  
+                                          <input type="password" placeholder="Enter Password" name="password" 
+                                          pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]*).{10,}" title="Must
+                                          contain at least one number and one uppercase and lowercase letter, and at least 10 or
+                                          more characters" required>
+                                          
+                                          
+                                          
+                                          <div class="link">
+
+                                            <label class="link1">Your Homepage link</label><br>
+
+                                            <input type="text" placeholder="URL link" pattern="https?:// .+" title="please enter a website" required>
+                                          
+                                          </div>
                       
                                 </div>
                       

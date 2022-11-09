@@ -7,16 +7,22 @@
           <title>Login Page</title>
 
           <link rel="stylesheet" href="./css/style.css">
+
+          <script defer src="./js/index.js"></script>
+
+          
+
+          
 </head>
 <body>
 
 
           <main>
 
-                    <form class="together">  
+                    <form id="all" class="together">  
                               <div class="container-one">   
                                   <label class="email">Email address</label> <br>  
-                                  <input type="text" placeholder="Enter email" name="email" required>
+                                  <input type="text" id="emailAdd" placeholder="Enter email" pattern="[a-z0-9._+\-]+@[a-z0-9.\-]+\.[a-z]{2,3}" name="email"required>
                                 </div>
                                   
                                   <div class="text-para"><P style="color:#9ba1a7 ;"> We'll never share your email with anyone else</P></div>
@@ -24,8 +30,7 @@
                       
                                 <div class="pass">
                                           <label class="passw">Password</label> <br>  
-                                          <input type="password" placeholder="Enter Password" name="password" 
-                                          pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]*).{10,}" title="Must
+                                          <input type="password" id="pass" pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]*).{10,}"  title="Must 
                                           contain at least one number and one uppercase and lowercase letter, and at least 10 or
                                           more characters" required>
                                           
@@ -35,22 +40,42 @@
 
                                             <label class="link1">Your Homepage link</label><br>
 
-                                            <input type="text" placeholder="URL link" pattern="https?:// .+" title="please enter a website" required>
+                                            <input type="text" id="url" placeholder="URL link" pattern="https?://.+"  title="please enter a website" required>
                                           
                                           </div>
                       
                                 </div>
                       
                                 <div class="check">
-                                          <input type="checkbox"> <span>Check me out</span>
+                                          <input type="checkbox" id="check"  > 
+                                          <span>Check me out</span>
                       
                                 </div>
                                   
                                   
                                 <div class="but">
-                                          <button type="submit">submit</button> 
-                      
-                                </div>
+
+
+                                          <button type="submit" id="sub" >submit</button> 
+
+                                          
+
+                            </div>
+
+
+
+                              <div class="pop">
+
+                                <span class="forspan" id="emailId"></span>
+                                <span class="forspan" id="thePass"></span>
+                                <span class="forspan" id="link"></span>
+
+                                <span class="forspan" id="checkbox"></span>
+
+                                <span></span>
+
+
+                              </div>
                       
                       
                                 
@@ -81,6 +106,9 @@
                        
                     
           </main>
+
+
+          
 
 </body>     
 </html> 

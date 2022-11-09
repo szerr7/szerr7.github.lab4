@@ -111,8 +111,27 @@ input[type=text], input[type=password] {
           
     }
 
+    .forspan{
+
+      display: block;
+
+      margin-left: 15px;
+
+      margin-top: 10px;
+    }
     
-    
+    .pop{
+
+      border: 3px solid rgb(118, 194, 19);
+
+      height: 150px;
+
+      border-radius: 2vw;
+
+      width: 50%;
+
+     
+    }
     
 
     

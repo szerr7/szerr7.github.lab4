@@ -25,7 +25,15 @@ window.onload = function(){
 
                     const urlLinkMain = urlLink.value ;
 
-                    const checkMain = markCheck.value ; 
+                    const checkMain = markCheck.value ;
+                    
+                    
+
+
+                    //alert(`Email is  :${mainEmial}` + "\n" + `password is  :${passMain}` ) ;
+
+
+                   
 
 
 
@@ -33,6 +41,9 @@ window.onload = function(){
                     console.log(`password is  :${passMain}`)
                     console.log(`URL website is   :${urlLinkMain}`)
                     console.log(`check Box checked   :${checkMain}`)
+
+
+          
 
 
 
